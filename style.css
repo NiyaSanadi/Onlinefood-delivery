@@ -1,0 +1,248 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+/* Css Variables */
+:root{
+    --navbar-height:59px;
+}
+#navbar{
+    font-family: 'Anton', sans-serif;
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+#logo{
+    padding-top: 25px;
+    margin: 27px 14px;
+    margin-left: 29px;
+
+   
+}
+#logo img{
+    height: 104px;
+    width: 130px;
+    margin: -59px -52px;
+    margin-bottom: -25px;
+}
+
+#navbar ul{
+    display: flex;
+    padding-left: 460px;   
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(12, 10, 10);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+    z-index: -1;
+
+}
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+#navbar ul li a{
+    color: white;
+    display:block ;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    transition: .8s;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:5px 200px;
+    /* padding-top: 60px; */
+    justify-content: center;
+    align-items: center;
+    height:460px;
+   
+    
+    
+}
+ /* pseudo selectors */
+#home::before{
+    content: "";
+    background: url(/images/wall.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 80%;
+    width: 100%;
+    opacity: .85;
+    z-index: -1;
+}
+#home h1{
+ 
+    color: rgba(90, 24, 7, 0.733);
+    text-align: center;
+}
+#home p{
+    /* font-family: 'PT Sans Narrow', sans-serif; */
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;  
+}
+
+/* service section */
+
+#services {
+  
+    padding: 4px;
+    display: flex;
+    
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+    background-color: rgb(202, 229, 230);
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+/* #client-container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} */
+.client-item::before{
+    content: "";
+    position: absolute;
+    background: url(/images/client.jpg) no-repeat center/cover ;
+    width: 100%;
+    height: 40%;
+    opacity: .8;
+    z-index: -1;
+margin-bottom: 10px;
+}
+
+#client .client-item{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+}
+
+#client .clients{
+    height: 120px;
+    width: 154px;
+    padding: 20px 12px;
+    
+    margin:20px 12px ;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: burlywood;
+}
+#form{
+    position: relative;
+}
+#form::before{
+    content: "";
+    background: url(/images/back.jpg)  ;
+    position: absolute;
+    width: 100%;
+    height:84%;
+   top: 96px;
+ 
+   
+    opacity: .8;
+    z-index: -1;
+    /* margin-top: 80px; */
+   
+    
+
+}
+#form {
+   display: flex; 
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   padding-bottom: 24px;
+ 
+}
+#form-section{
+    width: 40%;
+}
+.form-grp input,
+.form-grp textarea{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+.form-grp label{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    font-size: 1.3rem;
+    padding:8px 7px;
+    margin-top: -3px;
+   
+}
+/* utility class */
+.h-primary{
+    
+    /* padding-top: 80px; */
+    padding:20px;
+    /* line-height: 0px; */
+    font-size: 2.8rem;
+    padding-top: 22px;
+    
+}
+.h-secondary{
+    
+    font-size: 2rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.center{
+    text-align: center;
+}
+
+#client .h-primary{
+padding:10px 10px;
+font-size:2.8rem;
+}
+
+#form .h-primary{
+    margin-top: 80px;
+}
+
